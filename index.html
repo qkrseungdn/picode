@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+        body {
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png");
+        }
+
+        .con{
+            width: 390px;
+            background-color: #6ed4ee;
+            height: 100%;
+        } 
+
+        .po{
+            margin-top: 30px;
+            
+        }
+
+        .pof{
+            background-color: azure;
+            margin: 15px 20px;
+            height: 200px;
+
+            background-size: cover;
+            position: relative;
+        }
+
+        .fo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ft{
+            color: beige;
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        .fd{
+            color: beige;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        #im1{
+            background-image: url('./KakaoTalk_20230204_220906090_01.jpg');
+        }
+
+        #im2{
+            background-image: url('./이\ 아이\ 파이.jpg');
+        }
+
+        #im3{
+            background-image: url('./심심.jpg');
+        }
+
+        #im4{
+            background-image: url('./빅뱅.jpg');
+        }
+
+        .pd{
+            color: beige;
+            background-color: black;
+
+            width: fit-content;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            transform: translate(-50%);
+            left: 50%;
+            opacity: 0;
+        }
+        .pdd{
+            color: beige;
+            background-color: black;
+
+            width: fit-content;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            opacity: 0;
+        }
+
+        .showText{
+            opacity: 0;
+        }
+
+        .hideText{
+            opacity: 1;
+            transition: opacity 0.5s linear;
+        }
+     </style>
+     <script>
+        function showText(number) {
+  if (number === 1) {
+    document.querySelector("#dd1").classList.remove("hideText");
+    document.querySelector("#dd1").classList.add("showText");
+  } else if (number === 2) {
+    document.querySelector("#dd2").classList.remove("hideText");
+    document.querySelector("#dd2").classList.add("showText");
+  } else if (number === 3){
+    document.querySelector("#dd3").classList.remove("hideText");
+    document.querySelector("#dd3").classList.add("showText");
+  } else {
+    document.querySelector("#dd4").classList.remove("hideText");
+    document.querySelector("#dd4").classList.add("showText");
+  }
+}
+function hideText(number) {
+  if (number === 1) {
+    document.querySelector("#dd1").classList.remove("showText");
+    document.querySelector("#dd1").classList.add("hideText");
+  } else if (number === 2) {
+    document.querySelector("#dd2").classList.remove("showText");
+    document.querySelector("#dd2").classList.add("hideText");
+  } else if (number === 3){
+    document.querySelector("#dd3").classList.remove("showText");
+    document.querySelector("#dd3").classList.add("hideText");
+  } else {
+    document.querySelector("#dd4").classList.remove("showText");
+    document.querySelector("#dd4").classList.add("hideText");
+  }
+}
+
+     </script>
+</head>
+<body>
+    <div class="con">
+        <div class="po">
+            <div id="im1" class="pof"
+            onmouseover="hideText(1)"
+            onmouseout="showText(1)"
+            >
+                <span id="dd1" class="pd">
+                    알칼리 금속(1족 비금속제외)       할로젠 원소(17족)
+                </span>
+            </div>
+            <div id="im2" class="pof"
+            onmouseover="hideText(2)"
+            onmouseout="showText(2)"
+            >
+                <span id="dd2" class="pd">
+                    증명 개어려움
+                </span>
+            </div>
+            <div id="im3" class="pof"
+            onmouseover="hideText(3)"
+            onmouseout="showText(3)"
+            >
+                <span id="dd3" class="pdd">
+                    심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다심심하다
+                </span>
+            </div>
+            <div id="im4" class="pof"
+            onmouseover="hideText(4)"
+            onmouseout="showText(4)"
+            >
+                <span id="dd4" class="pdd">
+                    빅뱅우주론이란 약 138억년전에 일어난 빅뱅으로 인해 초 고온 초 고밀도에서 기본 입자들의 생성과 동시에 우주가 확 팽창했다는 이론이다. 이 이론에 따르면 빅뱅 직후 기본 입자인 쿼크와 전자가 생겨났고 그뒤 양성자와 중성자가 생겨났으며 약 3분 뒤 헬륨 원자핵이 합성 되었다. 마지막인 원자생성 단계는 그후로부터 약 38만년 후이다. 우주는 크기가 증가하면서 온도와 밀도는 감소하고 있다. 빅뱅 초반에는 양성자와 중성자의 개수비가 1:1이였지만 시간이 지나고 온도가 내려가면서 양성자가 에너지를 흡수해 중성자가 되지 못하고 중성자만 계속해서 에너지를 방줄해 양성자와 중성자의 개수비는 7:1이 되었다. 현재 학계에선 우주 배경복사, 그리고 앙성자와 중성자의 비가 1:7이라는 것을 이용해 빅뱅우주론이 진실 이라는 것을 증명하여 빅뱅 우주론은 현재까지도 지지받는 이론이다.
+                </span>
+            </div>
+        </div>
+        <div class="fo">
+            <p class="ft">tlatlagkek</p>
+            <p class="fd">2023.02.04</p>
+        </div>
+    </div>
+</body>
+</html>
